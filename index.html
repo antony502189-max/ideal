@@ -2,20 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#e1f56e">
-  <meta name="description" content="Prototipo web interactivo basado en el sistema visual de la aplicación Android.">
-  <title>idealista — web app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Interfaz web basada en los recursos visuales de la aplicación idealista.">
+  <title>idealista</title>
   <link rel="icon" href="assets/property-hero.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app" class="app-shell">
+  <div class="desktop-bg" aria-hidden="true"></div>
+  <div id="app" class="app-frame">
     <main id="screen" class="screen" aria-live="polite"></main>
-    <nav id="bottom-nav" class="bottom-nav" aria-label="Navegación principal"></nav>
+    <nav id="bottomNav" class="bottom-nav" aria-label="Navegación principal"></nav>
   </div>
-  <div id="sheet-root"></div>
-  <div id="toast-root" aria-live="assertive"></div>
+  <div id="overlay"></div>
+  <div id="toastRoot" aria-live="assertive"></div>
   <script src="app.js"></script>
 </body>
 </html>
